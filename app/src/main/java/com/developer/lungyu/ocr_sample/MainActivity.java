@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
         txtResult.setText(ocrResult);
     }
 
+    /**
+     * 開始辨識文字並返回結果
+     * */
     public String ocrWithEnglish() {
         String resString = "";
 
@@ -103,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
         return  resString;
     }
 
+    /**
+     * 複製 assets 內的 .traineddata 檔案至手機內存
+     * */
     private void copyTrainedDataFile() {
         String filename = "eng.traineddata";
         AssetManager assetManager = getAssets();
@@ -128,6 +134,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 確認是否含有辨識分析檔案
+     * */
     private void checkTrainedDataExist(){
         File folderPath = new File(TESSBASE_PATH);
         File tessdataFolderPath = new File(TESSBASE_PATH + "tessdata/");
@@ -146,6 +155,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 取得不明來源權限(只得道內存權限不夠)
+     * */
     public void getUnknownSourceAllowUpdateApp(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!getPackageManager().canRequestPackageInstalls()) {
@@ -155,6 +167,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * 檢查是否已允許不明來源權限
+     * */
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
