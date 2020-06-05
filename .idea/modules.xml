@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OCR_Sample.iml" filepath="$PROJECT_DIR$/OCR_Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/OCR_Sample-app.iml" filepath="$PROJECT_DIR$/app/OCR_Sample-app.iml" group="OCR_Sample/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appProject-OCR_Sample.iml" filepath="$PROJECT_DIR$/appProject-OCR_Sample.iml" group="OCR_Sample" />
+    </modules>
+  </component>
+</project>
